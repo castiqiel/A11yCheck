@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Contrast Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎨 Contrast Previewer</h1>
+        <p class="subtitle">Check if your text is easy to read and meets accessibility guidelines.</p>
+
+        <!-- Color Inputs -->
+        <div class="input-group">
+            <div class="input-field">
+                <label for="bgColor">Background Color (Hex):</label>
+                <input type="text" id="bgColor" value="#ffffff" placeholder="#ffffff" maxlength="7">
+            </div>
+            <div class="input-field">
+                <label for="textColor">Text Color (Hex):</label>
+                <input type="text" id="textColor" value="#111111" placeholder="#111111" maxlength="7">
+            </div>
+        </div>
+
+        <!-- Dynamic Preview Box -->
+        <div id="previewBox" class="preview-box">
+            <h2>Preview Text</h2>
+            <p>This is a sample paragraph to test how readable your text color is against your chosen background color. Type different hex codes above to watch me change!</p>
+        </div>
+
+        <!-- Result Badge -->
+        <div class="result-container">
+            <span id="resultBadge" class="badge pass">PASS</span>
+            <p id="resultText" class="result-text">Great contrast! This text is highly readable.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
